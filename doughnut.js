@@ -1,6 +1,8 @@
+// add the chart and element
 import { Chart, ArcElement } from 'chart.js'
+// add the type
 import { Doughnut } from 'react-chartjs-2'
-import homeStyle from '../styles/Home.module.css'
+
 
 Chart.register(ArcElement);
 const labels = ['section 1', 'section 2', 'section 3', 'section 4', 'section 5', 'section 6'];
@@ -39,10 +41,10 @@ const data = {
     }]
 };
 
-export default function ox() {
+export default function myChart() {
  return (
- <div className={homeStyle.mainc}>
- <h2>Doughnut Sample with Next.js</h2>
+ <div>
+ <h1>Doughnut Sample with Next.js</h1>
  <Doughnut
  data={data}
  options={{
